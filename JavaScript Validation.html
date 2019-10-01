@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	function validateForm(){
+	var x = document.forms["myForm"]["firstname","lastname","email"].value;
+	if (x == ""){
+	alert("Please fill out all fields before attempting to continue...");
+	return false;
+	}
+	}
+	</script>
+	
+<title>Page Title</title>
+<link rel="Stylesheet" type="text/css" href="HtmlDeliverable.css">
+</head>
+<body>
+
+<!-- a slight change was made to the form in order to validate it-->
+	<h1 style="border: 2px solid DodgerBlue;">Customer Information</h1>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+	Please Enter Your First Name:<br>
+	<input type="text" name="firstname" value="">
+	<br>
+	
+	Please Enter Your Last Name:<br>
+	<input type="text" name="lastname" value="">
+	<br>
+	
+	Please Enter Your E-mail:<br>
+	<input type="text" name="email" value="">
+	<br>
+	
+	<input type="Submit" value="Submit">
+	
+</form
+</body>
+<html>
